@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+  <title>Materialize Portfolio Website</title>
+  <style>
+    header {
+      background: url("./img/item7.jpg") no-repeat  center center/cover;
+      min-height: 100vh ;
+    }
+    .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator {
+      background: brown ;
+    }
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+      background: transparent;
+    }
+   
+    @media (max-width: 600px) {
+      header {
+        min-height: 50vh;
+      }
+      .parallax-container {
+        height: 150px;
+      }
+    }
+    ul.sidenav li a {
+      color: white;
+    }
+  </style>
+  </head>
+  <body>
+    <!-------------------Header--------------------------- -->
+    <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a href="" class="brand-logo">Anis Alkomem</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small brown darken-1" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a></i></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small brown darken-1" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a></i></li>
+            <li><a href="#" class="tooltipped btn-floating btn-small brown darken-1" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a></i></li>
+          </ul>
+          <ul class="sidenav amber darken-4 white-text" id="mobile-menu">
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!------------------End of Header------------------ -->
+
+    <!-- ---------------Photo Grid ---------------------- -->
+    <section class="container section scrollspy" id="photos">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/item6.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="brown-text text-darken-3">Portraits</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus cum eveniet dolore facere unde deserunt.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 push-l6">
+          <img src="img/showcase.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 pull-l5 right-align">
+          <h2 class="brown-text text-darken-3">Outside</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus cum eveniet dolore facere unde deserunt.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/item5.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="brown-text text-darken-3">Action</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus cum eveniet dolore facere unde deserunt.</p>
+        </div>
+      </div>
+
+    </section>
+    <!-- ------------------End of Photo Grid --------------------- -->
+    <!---------------------Parallax1------------------------------ -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/sunrise2.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+
+    <!-- -------------------Services and Tabs--------------------- -->
+    <section class="container section scrollspy" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="brown-text text-darken-4">What I do...</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt maiores incidunt alias sint expedita.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt maiores incidunt alias sint expedita.</p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="brown-text text-darken-4">Photography</a>
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="brown-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text brown-text text-darken-4" >PHOTOGRAPHY</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt maiores incidunt alias sint expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt maiores incidunt alias sint expedita.</p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text brown-text text-darken-4" >EDITING</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt maiores incidunt alias sint expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt maiores incidunt alias sint expedita.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------Parallax2--------------------------------- -->
+    
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/sunrise.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <!-- -------------Contact Form ------------------------------ -->
+    <section class="section container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="brown-text text-darken-4">Get in Touch</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id ut ratione inventore dolor animi.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id ut ratione inventore dolor animi.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur id ut ratione inventore dolor animi.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" name="" id="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Your message</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="date" class="datepicker">
+              <label for="date">Choose a date you me to start the work...</label>
+            </div>
+            <div class="input-field">
+              <p>Services required...</p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Photography</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Editing</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------Footer------------------------ -->
+    <footer class="page-footer brown darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h5>About Me</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus officia, quo delectus reiciendis eos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus officia, quo delectus reiciendis eos.</p>
+          </div>
+          <div class="col s12 l4 offset-l2">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+              <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+              <li><a href="#" class="grey-text text-lighten-3">LinkedIn</a></li>
+              <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright brown darken-3">
+        <div class="container center-align">&copy; 2020 Anis Alkomem</div>
+      </div>
+
+    </footer>
+
+   
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+    });
+
+
+
+
+
+  </script>
+</body>
+</html>
